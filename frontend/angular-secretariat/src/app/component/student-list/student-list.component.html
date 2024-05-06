@@ -1,0 +1,26 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th>id</th>
+      <th>firstName</th>
+      <th>lastName</th>
+      <th>specialization</th>
+      <th>groupNumber</th>
+      <th>matriculationNumber</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let tempStudent of students">
+      <td class="align-middle">{{tempStudent.id}}</td>
+      <td class="align-middle">{{tempStudent.firstName}}</td>
+      <td class="align-middle">{{tempStudent.lastName}}</td>
+      <td class="align-middle">{{tempStudent.specialization}}</td>
+      <td class="align-middle">{{tempStudent.groupNumber}}</td>
+      <td class="align-middle">{{tempStudent.matriculationNumber}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
