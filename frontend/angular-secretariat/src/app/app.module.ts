@@ -17,20 +17,34 @@ import { StudentAddStudentComponent } from './component/student-add-student/stud
 import { StudentUpdateStudentComponent } from './component/student-update-student/student-update-student.component';
 import { StudentDeleteStudentByIdComponent } from './component/student-delete-student-by-id/student-delete-student-by-id.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { SecretaryAddSecretaryComponent } from './component/secretary-add-secretary/secretary-add-secretary.component';
+import { SecretaryGetSecretaryByIdComponent } from './component/secretary-get-secretary-by-id/secretary-get-secretary-by-id.component';
+import { SecretaryGetAllSecretariesComponent } from './component/secretary-get-all-secretaries/secretary-get-all-secretaries.component';
+import { SecretaryUpdateSecretaryComponent } from './component/secretary-update-secretary/secretary-update-secretary.component';
+import { SecretaryDeleteSecretaryByIdComponent } from './component/secretary-delete-secretary-by-id/secretary-delete-secretary-by-id.component';
+import {SecretaryService} from "./services/secretary.service";
 
 const routes: Routes = [
+  { path: 'login', component: LoginComponent },
+
   { path: 'student-login', component: StudentLoginComponent },
+
+  { path: 'secretary-login', component: SecretaryLoginComponent },
 
   { path: 'student-api', component: StudentApiComponent },
   { path: 'student-api/addStudent', component: StudentAddStudentComponent },
-  { path: 'student-api/deleteStudentById', component: StudentDeleteStudentByIdComponent },
-  { path: 'student-api/getAllStudents', component: StudentGetAllStudentsComponent },
   { path: 'student-api/getStudentById', component: StudentGetStudentByIdComponent },
+  { path: 'student-api/getAllStudents', component: StudentGetAllStudentsComponent },
   { path: 'student-api/getAllStudents/updateStudent/:id', component: StudentUpdateStudentComponent },
+  { path: 'student-api/deleteStudentById', component: StudentDeleteStudentByIdComponent },
 
-  { path: 'secretary-login', component: SecretaryLoginComponent },
   { path: 'secretary-api', component: SecretaryApiComponent },
-  { path: 'login', component: LoginComponent },
+  { path: 'secretary-api/addSecretary', component: SecretaryAddSecretaryComponent },
+  { path: 'secretary-api/getSecretaryById', component: SecretaryGetSecretaryByIdComponent },
+  { path: 'secretary-api/getAllSecretaries', component: SecretaryGetAllSecretariesComponent },
+  { path: 'secretary-api/getAllSecretaries/updateSecretary/:id', component: SecretaryUpdateSecretaryComponent },
+  { path: 'secretary-api/deleteSecretaryById', component: SecretaryDeleteSecretaryByIdComponent },
+
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', redirectTo: '/login', pathMatch: 'full' }
 ];
@@ -48,7 +62,12 @@ const routes: Routes = [
     StudentGetStudentByIdComponent,
     StudentAddStudentComponent,
     StudentUpdateStudentComponent,
-    StudentDeleteStudentByIdComponent
+    StudentDeleteStudentByIdComponent,
+    SecretaryAddSecretaryComponent,
+    SecretaryGetSecretaryByIdComponent,
+    SecretaryGetAllSecretariesComponent,
+    SecretaryUpdateSecretaryComponent,
+    SecretaryDeleteSecretaryByIdComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +77,7 @@ const routes: Routes = [
     ReactiveFormsModule
   ],
   exports: [RouterModule],
-  providers: [StudentService],
+  providers: [StudentService, SecretaryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -6,7 +6,6 @@ export class Student {
               public specialization: string,
               public groupNumber: string,
               public matriculationNumber: string,
-              ) {
-  }
+              ) { }
 
 }
