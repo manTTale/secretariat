@@ -1,12 +1,13 @@
 <table class="table">
   <thead class="thead-dark">
     <tr>
-      <th>id</th>
-      <th>firstName</th>
-      <th>lastName</th>
-      <th>specialization</th>
-      <th>groupNumber</th>
-      <th>matriculationNumber</th>
+      <th scope="col">id</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Specialization</th>
+      <th scope="col">Group Number</th>
+      <th scope="col">Matriculation Number</th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
 
@@ -18,6 +19,11 @@
       <td class="align-middle">{{tempStudent.specialization}}</td>
       <td class="align-middle">{{tempStudent.groupNumber}}</td>
       <td class="align-middle">{{tempStudent.matriculationNumber}}</td>
+      <td>
+        <i (click)="deleteStudent(tempStudent.id)" class="fa fa-trash"></i>
+        &nbsp;
+        <a routerLink="updateStudent/{{tempStudent.id}}"><i class="fa fa-edit"></i></a>
+      </td>
     </tr>
   </tbody>
 </table>

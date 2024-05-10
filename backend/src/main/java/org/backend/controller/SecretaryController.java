@@ -25,17 +25,13 @@ public class SecretaryController {
 
     @PostMapping("/addSecretary")
     public Secretary addSecretary(@RequestBody @Valid Secretary secretary) {
-        System.out.println("inside Controller -> addSecretary before processing");
         var toReturn = secretaryService.addSecretary(secretary);
-        System.out.println("inside Controller -> addSecretaries after processing and the secretary is " + secretary);
         return toReturn;
     }
 
     @PostMapping("/addSecretaries")
     public List<Secretary> addSecretaries(@RequestBody List<Secretary> secretaries) {
-        System.out.println("inside Controller -> addSecretaries before processing");
         var toReturn = secretaryService.addSecretaries(secretaries);
-        System.out.println("inside Controller -> addSecretaries after processing and the Secretaries are " + secretaries);
         return toReturn;
     }
 
