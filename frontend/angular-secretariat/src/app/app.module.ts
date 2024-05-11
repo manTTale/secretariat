@@ -23,8 +23,20 @@ import { SecretaryGetAllSecretariesComponent } from './component/secretary-get-a
 import { SecretaryUpdateSecretaryComponent } from './component/secretary-update-secretary/secretary-update-secretary.component';
 import { SecretaryDeleteSecretaryByIdComponent } from './component/secretary-delete-secretary-by-id/secretary-delete-secretary-by-id.component';
 import {SecretaryService} from "./services/secretary.service";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {AuthGuard} from "./guards/auth.guard";
 
 const routes: Routes = [
+  { path:'admin',
+    canActivate: [AuthGuard],
+    loadChildren: () => import(`./modules/admin/admin.module`).then((m) => m.AdminModule) },
+  { path:'secretary',
+    canActivate: [AuthGuard],
+    loadChildren: () => import(`./modules/secretary/secretary.module`).then((m) => m.SecretaryModule) },
+  { path:'student',
+    canActivate: [AuthGuard],
+    loadChildren: () => import(`./modules/student/student.module`).then((m) => m.StudentModule) },
+
   { path: 'login', component: LoginComponent },
 
   { path: 'student-login', component: StudentLoginComponent },
@@ -74,7 +86,8 @@ const routes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(routes),
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   exports: [RouterModule],
   providers: [StudentService, SecretaryService],
