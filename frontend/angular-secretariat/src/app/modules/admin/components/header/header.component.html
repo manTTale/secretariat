@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="#">Admin Header</a>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7E354D;">
+<div class="container">
+    <a class="navbar-brand" href="#">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -8,7 +8,22 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="./home">Home
+          <a class="nav-link" routerLink="./manage-students">Manage students
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="./add-student">Add a new student
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="./manage-secretaries">Manage secretaries
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="./add-secretary">Add a new secretary
             <span class="sr-only">(current)</span>
           </a>
         </li>
@@ -16,13 +31,10 @@
           <a class="nav-link" routerLink="./about">About</a>
         </li>
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="./services">Services</a>
-        </li>
-        <li class="nav-item" routerLinkActive="active">
           <a class="nav-link" routerLink="./contact">Contact</a>
         </li>
         <li class=" btn-primary nav-item text-white" role="button">
-          <a class="nav-link text-white" (click)="logout()">logout</a>
+          <a class="nav-link text-white" (click)="logout()">Logout</a>
         </li>
       </ul>
     </div>

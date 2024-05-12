@@ -8,6 +8,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ManageStudentsComponent } from './components/manage-students/manage-students.component';
+import { AddStudentComponent } from './components/add-student/add-student.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { UpdateStudentComponent } from './components/update-student/update-student.component';
+import { ManageSecretariesComponent } from './components/manage-secretaries/manage-secretaries.component';
+import { AddSecretaryComponent } from './components/add-secretary/add-secretary.component';
+import { UpdateSecretaryComponent } from './components/update-secretary/update-secretary.component';
 
 
 @NgModule({
@@ -18,10 +25,18 @@ import { ContactComponent } from './components/contact/contact.component';
     HomeComponent,
     AboutComponent,
     ContactComponent,
+    ManageStudentsComponent,
+    AddStudentComponent,
+    UpdateStudentComponent,
+    ManageSecretariesComponent,
+    AddSecretaryComponent,
+    UpdateSecretaryComponent,
   ],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class AdminModule { }
