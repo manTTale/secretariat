@@ -64,4 +64,22 @@ export class LoginComponent implements OnInit {
         }
     }
   }
+
+  loginAsAdmin() {
+    this.loginForm.controls['email'].setValue('admin@gmail.com');
+    this.loginForm.controls['password'].setValue('admin123');
+    this.onSubmit();
+  }
+
+  loginAsSecretary() {
+    this.loginForm.controls['email'].setValue('secretary@gmail.com');
+    this.loginForm.controls['password'].setValue('secretary123');
+    this.onSubmit();
+  }
+
+  loginAsStudent() {
+    this.loginForm.controls['email'].setValue('student@gmail.com');
+    this.loginForm.controls['password'].setValue('student123');
+    this.onSubmit();
+  }
 }

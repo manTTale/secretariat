@@ -1,0 +1,48 @@
+.social-icon {
+  margin: 0 10px;
+}
+
+.image {
+  margin-top:20px;
+  background-color: white;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer-section {
+  background-color: #7E354D;
+}
+
+.footer-section img {
+  margin-top:20px;
+  width: 100%;
+}
+
+.footer-section h6 {
+  color: #ffffff;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+.footer-section .nav-link {
+  color: #ffffff;
+}
+
+.footer-section .social-icon i {
+  color: #ffffff;
+  font-size: 24px;
+  font-color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-section .social-icon:last-child {
+  margin-bottom: 20px;
+}
