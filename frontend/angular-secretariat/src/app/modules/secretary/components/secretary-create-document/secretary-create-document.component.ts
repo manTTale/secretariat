@@ -12,4 +12,8 @@ export class SecretaryCreateDocumentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit(submission: any) {
+    console.log('Form submission:', submission);
+    // Process the form submission here
+  }
 }
