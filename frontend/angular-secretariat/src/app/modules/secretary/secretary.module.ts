@@ -9,6 +9,7 @@ import { SecretaryHomeComponent } from './components/secretary-home/secretary-ho
 import { SecretaryCreateDocumentComponent } from './components/secretary-create-document/secretary-create-document.component';
 import { SecretaryReviewDocumentComponent } from './components/secretary-review-document/secretary-review-document.component';
 import { CreateDocumentComponent } from './components/create-document/create-document.component';
+import {FormioModule} from "angular-formio";
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { CreateDocumentComponent } from './components/create-document/create-doc
   imports: [
     CommonModule,
     SecretaryRoutingModule,
+    FormioModule
   ]
 })
 export class SecretaryModule { }
