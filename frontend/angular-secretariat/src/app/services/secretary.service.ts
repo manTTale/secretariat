@@ -7,7 +7,8 @@ import {Secretary} from "../common/secretary";
   providedIn: 'root'
 })
 export class SecretaryService {
-  private baseUrl = 'http://localhost:8080/secretary';
+  // private baseUrl = 'http://localhost:8080/secretary';
+  private baseUrl = 'http://feaa.us-east-1.elasticbeanstalk.com/secretary';
   private addSecretarySuffix = '/addSecretary';
   private getSecretaryByIdSuffix = '/getSecretaryById';
   private getAllSecretariesSuffix = '/getAllSecretaries';

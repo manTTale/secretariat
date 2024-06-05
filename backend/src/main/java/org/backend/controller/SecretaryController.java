@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Validated
 @RestController
 @RequestMapping(path = "/secretary")
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin(origins = "*")
 public class SecretaryController {
 
     @Autowired
