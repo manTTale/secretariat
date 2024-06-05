@@ -8,6 +8,12 @@ import { StudentHeaderComponent } from './components/student-header/student-head
 import { StudentViewDocumentsPendingCompletionComponent } from './components/student-view-documents-pending-completion/student-view-documents-pending-completion.component';
 import { StudentViewDocumentsCompletedComponent } from './components/student-view-documents-completed/student-view-documents-completed.component';
 import { StudentHomeComponent } from './components/student-home/student-home.component';
+import {StudentUploadDocumentComponent} from "./components/student-upload-document/student-upload-document.component";
+import {FormioModule} from "angular-formio";
+import {FooterComponent} from "../admin/components/footer/footer.component";
+import {
+  StudentSubmissionDetailComponent
+} from "./components/student-submission-detail/student-submission-detail.component";
 
 
 @NgModule({
@@ -17,11 +23,14 @@ import { StudentHomeComponent } from './components/student-home/student-home.com
     StudentHeaderComponent,
     StudentViewDocumentsPendingCompletionComponent,
     StudentViewDocumentsCompletedComponent,
-    StudentHomeComponent
+    StudentHomeComponent,
+    StudentUploadDocumentComponent,
+    StudentSubmissionDetailComponent
   ],
   imports: [
     CommonModule,
-    StudentRoutingModule
+    StudentRoutingModule,
+    FormioModule,
   ]
 })
 export class StudentModule { }

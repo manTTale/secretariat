@@ -8,13 +8,19 @@ import {
 import {
   StudentViewDocumentsCompletedComponent
 } from "./components/student-view-documents-completed/student-view-documents-completed.component";
+import {StudentUploadDocumentComponent} from "./components/student-upload-document/student-upload-document.component";
+import {
+  StudentSubmissionDetailComponent
+} from "./components/student-submission-detail/student-submission-detail.component";
 
 const routes: Routes = [{
-  path:'', component: StudentDashboardComponent,
+  path: '', component: StudentDashboardComponent,
   children: [
     { path: 'home', component: StudentHomeComponent },
     { path: 'view-documents-pending-completion', component: StudentViewDocumentsPendingCompletionComponent },
     { path: 'view-documents-completed', component: StudentViewDocumentsCompletedComponent },
+    { path: 'upload-document', component: StudentUploadDocumentComponent },
+    { path: 'submission/:id', component: StudentSubmissionDetailComponent },
     { path: '', redirectTo: '/student/home', pathMatch: 'full' }
   ]
 }];

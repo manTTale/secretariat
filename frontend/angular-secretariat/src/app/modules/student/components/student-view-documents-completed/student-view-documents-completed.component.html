@@ -1,1 +1,33 @@
-<p>student-view-documents-completed works!</p>
+<div class="container mt-4">
+  <h2>Documente depuse</h2>
+  <ng-container *ngIf="submissions$ | async as submissions; else noSubmissions">
+    <div *ngIf="submissions.length > 0; else noSubmissions">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Form Code</th>
+          <th>Status</th>
+          <th>Details</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let submission of submissions">
+          <td>{{ submission.id }}</td>
+          <td>{{ submission.formCode }}</td>
+          <td>{{ submission.documentStatus }}</td>
+          <td>
+            <button type="button" class="btn btn-primary" (click)="openFormBuilder(submission)">
+              <span class="fa fa-pencil"></span>
+              <span class="ml-1">Details</span>
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </ng-container>
+  <ng-template #noSubmissions>
+    <p>Nu există documente depuse.</p>
+  </ng-template>
+</div>

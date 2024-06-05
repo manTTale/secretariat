@@ -23,6 +23,8 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "angular-formio": "^4.11.5",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "formiojs": "^4.20.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

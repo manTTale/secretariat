@@ -10,6 +10,10 @@ import { SecretaryCreateDocumentComponent } from './components/secretary-create-
 import { SecretaryReviewDocumentComponent } from './components/secretary-review-document/secretary-review-document.component';
 import { CreateDocumentComponent } from './components/create-document/create-document.component';
 import {FormioModule} from "angular-formio";
+import {
+  SecretaryCreateDocumentTemplateComponent
+} from "./components/secretary-create-document-template/secretary-create-document-template.component";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -20,12 +24,14 @@ import {FormioModule} from "angular-formio";
     SecretaryHomeComponent,
     SecretaryCreateDocumentComponent,
     SecretaryReviewDocumentComponent,
-    CreateDocumentComponent
+    SecretaryCreateDocumentTemplateComponent,
+    CreateDocumentComponent,
   ],
   imports: [
     CommonModule,
     SecretaryRoutingModule,
-    FormioModule
+    FormioModule,
+    FormsModule
   ]
 })
 export class SecretaryModule { }
