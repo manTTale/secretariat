@@ -9,6 +9,11 @@ import {StudentSubmission} from "../../../../common/student-submission.model";
   providedIn: 'root',
 })
 export class FormService {
+
+  // #CHANGE FOR AWS
+  // private baseUrl = 'http://feaa.us-east-1.elasticbeanstalk.com/api/forms';
+  // private submissionUrl = 'http://feaa.us-east-1.elasticbeanstalk.com/api/submissions';
+
   private baseUrl = 'http://localhost:8080/api/forms';
   private submissionUrl = 'http://localhost:8080/api/submissions';
 

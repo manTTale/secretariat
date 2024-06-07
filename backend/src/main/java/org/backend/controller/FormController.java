@@ -11,7 +11,7 @@ import java.util.List;
 @Validated
 @RestController
 @RequestMapping("/api/forms")
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("*")
 public class FormController {
 
     private final FormService formService;
