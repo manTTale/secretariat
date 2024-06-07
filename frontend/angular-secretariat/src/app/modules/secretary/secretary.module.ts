@@ -8,6 +8,12 @@ import { SecretaryHeaderComponent } from './components/secretary-header/secretar
 import { SecretaryHomeComponent } from './components/secretary-home/secretary-home.component';
 import { SecretaryCreateDocumentComponent } from './components/secretary-create-document/secretary-create-document.component';
 import { SecretaryReviewDocumentComponent } from './components/secretary-review-document/secretary-review-document.component';
+import { CreateDocumentComponent } from './components/create-document/create-document.component';
+import {FormioModule} from "angular-formio";
+import {
+  SecretaryCreateDocumentTemplateComponent
+} from "./components/secretary-create-document-template/secretary-create-document-template.component";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -17,11 +23,15 @@ import { SecretaryReviewDocumentComponent } from './components/secretary-review-
     SecretaryHeaderComponent,
     SecretaryHomeComponent,
     SecretaryCreateDocumentComponent,
-    SecretaryReviewDocumentComponent
+    SecretaryReviewDocumentComponent,
+    SecretaryCreateDocumentTemplateComponent,
+    CreateDocumentComponent,
   ],
   imports: [
     CommonModule,
-    SecretaryRoutingModule
+    SecretaryRoutingModule,
+    FormioModule,
+    FormsModule
   ]
 })
 export class SecretaryModule { }
