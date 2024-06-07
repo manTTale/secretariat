@@ -1,0 +1,15 @@
+<!-- upload-document.component.html -->
+<div class="container mt-4">
+  <div class="form-group">
+    <label for="documentType">Selectează tipul documentului</label>
+    <select id="documentType" class="form-control" (change)="onDocumentTypeChange($event.target.value)">
+      <option value=""></option>
+      <option value="ADEVERINTA">Adeverinta</option>
+      <option value="ADEVERINTA_TEST">Test adeverinta</option>
+    </select>
+  </div>
+
+  <div *ngIf="formSchema">
+    <formio [form]="formSchema" (submit)="onSubmit($event)"></formio>
+  </div>
+</div>

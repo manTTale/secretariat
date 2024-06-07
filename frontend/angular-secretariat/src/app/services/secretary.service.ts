@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Secretary} from "../common/secretary";
+import {StudentSubmission} from "../common/student-submission.model";
 
 @Injectable({
   providedIn: 'root'
@@ -42,5 +43,11 @@ export class SecretaryService {
     const calledUrl = this.baseUrl + this.updateSecretarySuffix;
     data.id = id;
     return this.httpClient.put(calledUrl, data);
+  }
+
+  updateDocumentStatus(submissionId: number, newStatus: string): Observable<StudentSubmission> {
+    return this.httpClient.put<StudentSubmission>(`${this.baseUrl}/update-status/${submissionId}`, null, {
+      params: { status: newStatus }
+    });
   }
 }
