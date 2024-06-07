@@ -10,7 +10,7 @@ import java.util.List;
 @Validated
 @RestController
 @RequestMapping("/api/submissions")
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("*")
 public class SubmissionController {
 
     private final SubmissionService submissionService;

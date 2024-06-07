@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 @Validated
 @RestController
 @RequestMapping(path = "/secretary")
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin(origins = "*")
 public class SecretaryController {
 
     @Autowired
