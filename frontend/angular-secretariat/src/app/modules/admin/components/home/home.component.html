@@ -1,1 +1,74 @@
-<p>home works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FEAA Secretariat</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .mt-20 {
+      margin-top: 20px;
+    }
+    .custom-nav-item {
+      background-color: #7E354D;
+      color: white;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+    }
+    .custom-nav-item a {
+      color: white;
+      text-decoration: none;
+    }
+    .custom-nav-item a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="text-center">
+<div class="container">
+  <h2 class="mt-20">Welcome to the secretariat of the Faculty of Economics and Business Administration</h2>
+  <h3 class="mt-20">What is the FEAA secretary application?</h3>
+  <p class="fs-5">You are now logged in as an Administrator. The FEAA secretariat app allows administrators to manage the
+    students and the secretaries of the whole faculty.
+  </p>
+  <div class="d-flex justify-content-center mb-4">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/D3kYvbLrof0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <h3 class="mt-20">What are the functionalities of the FEAA secretary application?</h3>
+  <p class="fs-5">This app offers the functionality of creating students and secretaries accounts. These accounts could then be used
+    as login information. It also allows administrators to edit information of the already created students and
+    secretaries accounts in case of a mistake. Administrators can also delete accounts of the aforementioned students or
+    secretaries.
+  </p>
+  <h3 class="mt-20">Useful tutorials</h3>
+  <div class="d-flex flex-column align-items-center">
+    <ul class="list-unstyled d-flex flex-wrap justify-content-between" style="width: 100%;">
+      <li class="nav-item custom-nav-item mt-20">
+        <a class="nav-link" routerLink="./tutorial-manage-students">Tutorial on Manage students
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item custom-nav-item mt-20">
+        <a class="nav-link" routerLink="./tutorial-add-student">Tutorial on Add a new student
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item custom-nav-item mt-20">
+        <a class="nav-link" routerLink="./tutorial-manage-secretaries">Tutorial on Manage secretaries
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item custom-nav-item mt-20">
+        <a class="nav-link" routerLink="./tutorial-add-secretary">Tutorial on Add a new secretary
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

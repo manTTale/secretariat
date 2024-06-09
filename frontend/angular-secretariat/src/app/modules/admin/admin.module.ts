@@ -15,6 +15,10 @@ import { UpdateStudentComponent } from './components/update-student/update-stude
 import { ManageSecretariesComponent } from './components/manage-secretaries/manage-secretaries.component';
 import { AddSecretaryComponent } from './components/add-secretary/add-secretary.component';
 import { UpdateSecretaryComponent } from './components/update-secretary/update-secretary.component';
+import { TutorialManageStudentsComponent } from './components/tutorial-manage-students/tutorial-manage-students.component';
+import { TutorialManageSecretariesComponent } from './components/tutorial-manage-secretaries/tutorial-manage-secretaries.component';
+import { TutorialAddStudentComponent } from './components/tutorial-add-student/tutorial-add-student.component';
+import { TutorialAddSecretaryComponent } from './components/tutorial-add-secretary/tutorial-add-secretary.component';
 
 
 @NgModule({
@@ -31,6 +35,10 @@ import { UpdateSecretaryComponent } from './components/update-secretary/update-s
     ManageSecretariesComponent,
     AddSecretaryComponent,
     UpdateSecretaryComponent,
+    TutorialManageStudentsComponent,
+    TutorialManageSecretariesComponent,
+    TutorialAddStudentComponent,
+    TutorialAddSecretaryComponent,
   ],
   imports: [
     CommonModule,

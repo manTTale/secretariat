@@ -10,11 +10,23 @@ import {UpdateStudentComponent} from "./components/update-student/update-student
 import {UpdateSecretaryComponent} from "./components/update-secretary/update-secretary.component";
 import {AddSecretaryComponent} from "./components/add-secretary/add-secretary.component";
 import {ManageSecretariesComponent} from "./components/manage-secretaries/manage-secretaries.component";
+import {
+  TutorialManageSecretariesComponent
+} from "./components/tutorial-manage-secretaries/tutorial-manage-secretaries.component";
+import {
+  TutorialManageStudentsComponent
+} from "./components/tutorial-manage-students/tutorial-manage-students.component";
+import {TutorialAddStudentComponent} from "./components/tutorial-add-student/tutorial-add-student.component";
+import {TutorialAddSecretaryComponent} from "./components/tutorial-add-secretary/tutorial-add-secretary.component";
 
 const routes: Routes = [{
   path:'', component: AdminDashboardComponent,
   children: [
     { path: 'home', component: HomeComponent },
+    { path: 'home/tutorial-manage-students', component: TutorialManageStudentsComponent },
+    { path: 'home/tutorial-add-student', component: TutorialAddStudentComponent },
+    { path: 'home/tutorial-manage-secretaries', component: TutorialManageSecretariesComponent },
+    { path: 'home/tutorial-add-secretary', component: TutorialAddSecretaryComponent },
     { path: 'manage-students', component: ManageStudentsComponent },
     { path: 'add-student', component: AddStudentComponent },
     { path: 'manage-students/updateStudent/:id', component: UpdateStudentComponent },
