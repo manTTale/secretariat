@@ -1,0 +1,14 @@
+.custom-nav-item {
+  background-color: #7E354D;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.custom-nav-item a {
+  color: white;
+  text-decoration: none;
+}
+.custom-nav-item a:hover {
+  text-decoration: underline;
+}

@@ -14,6 +14,8 @@ import {
   SecretaryCreateDocumentTemplateComponent
 } from "./components/secretary-create-document-template/secretary-create-document-template.component";
 import {FormsModule} from "@angular/forms";
+import { TutorialCreateDocumentComponent } from './components/tutorial-create-document/tutorial-create-document.component';
+import { TutorialReviewDocumentComponent } from './components/tutorial-review-document/tutorial-review-document.component';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import {FormsModule} from "@angular/forms";
     SecretaryReviewDocumentComponent,
     SecretaryCreateDocumentTemplateComponent,
     CreateDocumentComponent,
+    TutorialCreateDocumentComponent,
+    TutorialReviewDocumentComponent,
   ],
   imports: [
     CommonModule,

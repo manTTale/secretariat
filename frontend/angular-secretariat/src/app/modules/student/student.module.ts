@@ -14,6 +14,8 @@ import {FooterComponent} from "../admin/components/footer/footer.component";
 import {
   StudentSubmissionDetailComponent
 } from "./components/student-submission-detail/student-submission-detail.component";
+import { TutorialSubmitDocumentComponent } from './components/tutorial-submit-document/tutorial-submit-document.component';
+import { TutorialSubmittedDocumentComponent } from './components/tutorial-submitted-document/tutorial-submitted-document.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import {
     StudentViewDocumentsCompletedComponent,
     StudentHomeComponent,
     StudentUploadDocumentComponent,
-    StudentSubmissionDetailComponent
+    StudentSubmissionDetailComponent,
+    TutorialSubmitDocumentComponent,
+    TutorialSubmittedDocumentComponent
   ],
   imports: [
     CommonModule,
