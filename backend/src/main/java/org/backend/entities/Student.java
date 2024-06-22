@@ -37,6 +37,6 @@ public class Student {
     private String groupNumber;
 
     @Column(name="matriculation_number")
-    private String studentId;
+    private String matriculationNumber;
 
 }
