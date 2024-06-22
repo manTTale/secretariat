@@ -1,5 +1,5 @@
 <div class="container mt-4">
-  <h2>Documente depuse</h2>
+  <h2>Submitted documents</h2>
   <ng-container *ngIf="submissions$ | async as submissions; else noSubmissions">
     <div *ngIf="submissions.length > 0; else noSubmissions">
       <table class="table table-striped">
@@ -28,6 +28,6 @@
     </div>
   </ng-container>
   <ng-template #noSubmissions>
-    <p>Nu există documente depuse.</p>
+    <p>Nu există Submitted documents.</p>
   </ng-template>
 </div>

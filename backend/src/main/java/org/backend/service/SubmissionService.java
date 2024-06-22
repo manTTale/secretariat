@@ -39,7 +39,7 @@ public class SubmissionService {
 
     public StudentSubmission createSubmission(String submissionData, String formCode) {
         StudentSubmission submission = new StudentSubmission(submissionData, formCode);
-        submission.setDocumentStatus(DocumentStatus.DEPUS);
+        submission.setDocumentStatus(DocumentStatus.SUBMITTED);
         return studentSubmissionRepository.save(submission);
     }
 }

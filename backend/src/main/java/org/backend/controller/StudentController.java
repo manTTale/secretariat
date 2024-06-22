@@ -3,6 +3,7 @@ package org.backend.controller;
 import jakarta.validation.Valid;
 import java.util.List;
 import java.util.Optional;
+import java.util.concurrent.CompletableFuture;
 import org.backend.entities.Student;
 import org.backend.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,7 +45,7 @@ public class StudentController {
     }
 
     @GetMapping("/getAllStudents")
-    public List<Student> getAllStudents() {
+    public CompletableFuture<List<Student>> getAllStudents() {
         return studentService.getAllStudents();
     }
 

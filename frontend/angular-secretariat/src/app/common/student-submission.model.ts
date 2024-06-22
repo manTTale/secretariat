@@ -11,6 +11,6 @@ export class StudentSubmission {
 }
 
 export enum DocumentStatus {
-  DEPUS = 'DEPUS',
-  APROBAT = 'APROBAT'
+  SUBMITTED = 'SUBMITTED',
+  APPROVED = 'APPROVED'
 }
