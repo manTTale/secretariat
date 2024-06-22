@@ -40,7 +40,7 @@ public class StudentService {
             studentToUpdate.setFirstName(student.getFirstName());
             studentToUpdate.setSpecialization(student.getSpecialization());
             studentToUpdate.setGroupNumber(student.getGroupNumber());
-            studentToUpdate.setMatriculationNumber(student.getMatriculationNumber());
+            studentToUpdate.setStudentId(student.getStudentId());
             return studentRepository.save(studentToUpdate);
         } catch (PessimisticLockingFailureException e) {
             throw new RuntimeException("Lock wasn't acquired for the operation", e);
