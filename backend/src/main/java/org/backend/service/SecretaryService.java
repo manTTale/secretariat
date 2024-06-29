@@ -42,6 +42,9 @@ public class SecretaryService {
         var secretaryToUpdate = secretaryRepository.getReferenceById(secretary.getId());
         secretaryToUpdate.setLastName(secretary.getLastName());
         secretaryToUpdate.setFirstName(secretary.getFirstName());
+        secretaryToUpdate.setUserName(secretary.getUserName());
+        secretaryToUpdate.setPassword(secretary.getPassword());
+
         var toReturn = secretaryRepository.save(secretaryToUpdate);
         return toReturn;
     }

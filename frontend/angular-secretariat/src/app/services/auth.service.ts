@@ -24,6 +24,12 @@ export class AuthService {
     localStorage.removeItem('token');
     this.router.navigate(['login']);
   }
+  //Name of the student
+  // Student Id
+  // Graduation Year
+  // Specialization
+  // Title of dissertation thesis
+  // Professor Coordinator
 
   login({ email, password }: any): Observable<any> {
     if (email === 'admin@gmail.com' && password === 'admin123') {

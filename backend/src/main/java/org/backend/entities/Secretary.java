@@ -29,4 +29,11 @@ public class Secretary {
 
     @Column(name="first_name")
     private String firstName;
+
+    @Column(name="user_name")
+    private String userName;
+
+    @Column(name="password")
+    private String password;
+
 }

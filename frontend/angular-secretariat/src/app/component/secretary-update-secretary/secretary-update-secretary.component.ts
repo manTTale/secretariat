@@ -13,7 +13,9 @@ export class SecretaryUpdateSecretaryComponent implements OnInit {
 
   updateSecretary = new FormGroup({
     lastName: new FormControl(''),
-    firstName: new FormControl('')
+    firstName: new FormControl(''),
+    userName: new FormControl(''),
+    password: new FormControl('')
   });
 
   message: boolean = false;
@@ -26,7 +28,9 @@ export class SecretaryUpdateSecretaryComponent implements OnInit {
       console.log(result);
       this.updateSecretary = new FormGroup({
         lastName: new FormControl(result['lastName']),
-        firstName: new FormControl(result['firstName'])
+        firstName: new FormControl(result['firstName']),
+        userName: new FormControl(result['userName']),
+        password: new FormControl(result['password'])
       });
     })
   }

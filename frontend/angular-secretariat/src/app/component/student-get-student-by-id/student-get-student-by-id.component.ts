@@ -8,7 +8,8 @@ import {StudentService} from "../../services/student.service";
   styleUrls: ['./student-get-student-by-id.component.css']
 })
 export class StudentGetStudentByIdComponent implements OnInit {
-  student: Student = new Student(999, "mock","mock","mock","mock","mock");
+  student: Student = new Student(999, "mock","mock","mock",
+    "mock","mock","mock","mock");
 
   constructor(private studentService: StudentService) { }
 

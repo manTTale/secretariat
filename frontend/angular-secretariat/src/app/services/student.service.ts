@@ -9,8 +9,8 @@ import {Student} from "../common/student";
 export class StudentService {
 
   // #CHANGE FOR AWS
-  private baseUrl = 'http://localhost:8080/student';
-  // private baseUrl = 'http://feaa.us-east-1.elasticbeanstalk.com/student';
+  // private baseUrl = 'http://localhost:8080/student';
+  private baseUrl = 'http://feaa.us-east-1.elasticbeanstalk.com/student';
   private addStudentSuffix = '/addStudent';
   private addStudentsSuffix = '/addStudents';
   private getStudentByIdSuffix = '/getStudentById';

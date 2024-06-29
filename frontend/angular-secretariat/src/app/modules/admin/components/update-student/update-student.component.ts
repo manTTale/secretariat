@@ -15,7 +15,9 @@ export class UpdateStudentComponent implements OnInit {
     firstName: new FormControl(''),
     specialization: new FormControl(''),
     groupNumber: new FormControl(''),
-    matriculationNumber: new FormControl('')
+    matriculationNumber: new FormControl(''),
+    userName: new FormControl(''),
+    password: new FormControl('')
   });
 
   message: boolean = false;
@@ -31,7 +33,9 @@ export class UpdateStudentComponent implements OnInit {
         firstName: new FormControl(result['firstName']),
         specialization: new FormControl(result['specialization']),
         groupNumber: new FormControl(result['groupNumber']),
-        matriculationNumber: new FormControl(result['matriculationNumber'])
+        matriculationNumber: new FormControl(result['matriculationNumber']),
+        userName: new FormControl(result['userName']),
+        password: new FormControl(result['password'])
       });
     })
   }

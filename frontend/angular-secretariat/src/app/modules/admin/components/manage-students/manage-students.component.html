@@ -7,6 +7,8 @@
     <th scope="col">Specialization</th>
     <th scope="col">Group Number</th>
     <th scope="col">Student Id</th>
+    <th scope="col">User Name</th>
+    <th scope="col">Password</th>
     <th scope="col">Action</th>
   </tr>
   </thead>
@@ -19,6 +21,8 @@
     <td class="align-middle">{{tempStudent.specialization}}</td>
     <td class="align-middle">{{tempStudent.groupNumber}}</td>
     <td class="align-middle">{{tempStudent.matriculationNumber}}</td>
+    <td class="align-middle">{{tempStudent.userName}}</td>
+    <td class="align-middle">{{tempStudent.password}}</td>
     <td>
       <i (click)="deleteStudent(tempStudent.id)" class="fa fa-trash"></i>
       &nbsp;

@@ -1,5 +1,6 @@
 package org.backend.service;
 
+import jakarta.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
@@ -31,6 +32,7 @@ public class StudentService {
         return CompletableFuture.completedFuture(studentRepository.findAll());
     }
 
+    @Transactional
     public Student updateStudent(Student student) {
         try {
             var studentToUpdate = studentRepository
@@ -41,6 +43,9 @@ public class StudentService {
             studentToUpdate.setSpecialization(student.getSpecialization());
             studentToUpdate.setGroupNumber(student.getGroupNumber());
             studentToUpdate.setMatriculationNumber(student.getMatriculationNumber());
+            studentToUpdate.setUserName(student.getUserName());
+            studentToUpdate.setPassword(student.getPassword());
+
             return studentRepository.save(studentToUpdate);
         } catch (PessimisticLockingFailureException e) {
             throw new RuntimeException("Lock wasn't acquired for the operation", e);

@@ -14,7 +14,9 @@ export class AddStudentComponent implements OnInit {
     firstName: new FormControl(''),
     specialization: new FormControl(''),
     groupNumber: new FormControl(''),
-    matriculationNumber: new FormControl('')
+    matriculationNumber: new FormControl(''),
+    userName: new FormControl(''),
+    password: new FormControl('')
   });
 
   message: boolean = false;

@@ -6,6 +6,8 @@ export class Student {
               public specialization: string,
               public groupNumber: string,
               public matriculationNumber: string,
+              public userName: string,
+              public password: string
               ) { }
 
 }

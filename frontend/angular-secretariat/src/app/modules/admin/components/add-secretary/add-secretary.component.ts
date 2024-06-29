@@ -11,7 +11,9 @@ export class AddSecretaryComponent implements OnInit {
 
   addSecretary = new FormGroup({
     lastName: new FormControl(''),
-    firstName: new FormControl('')
+    firstName: new FormControl(''),
+    userName: new FormControl(''),
+    password: new FormControl('')
   });
 
   message: boolean = false;

@@ -39,4 +39,10 @@ public class Student {
     @Column(name="matriculation_number")
     private String matriculationNumber;
 
+    @Column(name="user_name")
+    private String userName;
+
+    @Column(name="password")
+    private String password;
+
 }
